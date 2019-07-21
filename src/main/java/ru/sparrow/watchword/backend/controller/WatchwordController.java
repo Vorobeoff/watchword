@@ -10,12 +10,12 @@ import ru.sparrow.watchword.backend.service.WatchwordService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/backend")
+@RequestMapping("/watchword")
 @RequiredArgsConstructor
 public class WatchwordController {
     private final WatchwordService service;
 
-    @GetMapping("/watchwords")
+    @GetMapping("/all")
     public List<WatchwordDto> getWatchwords() {
         return service.getWatchwords();
     }

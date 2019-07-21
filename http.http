@@ -1,4 +1,4 @@
-GET http://localhost:8090/backend/watchwords
+GET http://localhost:8090/backend/watchword/all
 Accept: application/json
 
 ###
