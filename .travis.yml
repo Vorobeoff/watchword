@@ -3,6 +3,9 @@ jdk: oraclejdk11
 
 script: mvn clean verify
 
+services:
+  - postgresql
+
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 
